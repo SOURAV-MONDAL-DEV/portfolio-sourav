@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 115, 234, 190;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +18,28 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  animation: mymove 2s  infinite;
+  animation-direction: alternate;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    /* Add the blur effect */
+    /* filter: blur(24px);
+    -webkit-filter: blur(24px); */
+}
+
+@keyframes mymove {
+  0% {background-image: url("../public/bg-image/20230509_022116.jpg");}
+  10% {background-image: url("../public/bg-image/20230509_022116.jpg");}
+  20% {background-image: url("../public/bg-image/20230509_022151.jpg");}
+  35% {background-image: url("../public/bg-image/5297078.jpg");}
+  75% {background-image: url("../public/bg-image/20230509_022244.jpg");}
+  100% {background-image: url("../public/bg-image/20230509_022405.jpg");}
+}
+
+.mainClass{
+    /* Add the blur effect */
+    /* background-color: rgba(0,0,0, 0.1); */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
 }
