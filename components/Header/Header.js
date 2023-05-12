@@ -8,12 +8,12 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className=" w-full bg-opacity-30 sticky top-0 z-10 shadow  backdrop-filter backdrop-blur-lg ">
+        <nav className=" mx-10 md:mx-20 rounded-xl sticky top-3 z-10 shadow bg-white/[.07] backdrop-filter backdrop-blur-lg ">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between  md:block">
                         <a href="javascript:void(0)">
-                        <Image className=" w-32 md:w-48" src={logoPic} alt="my gif" height="auto" />
+                        <Image className=" w-32 md:w-32" src={logoPic} alt="my gif" height="auto" />
                         </a>
                         <div className="md:hidden">
                             <button
