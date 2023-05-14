@@ -17,7 +17,7 @@ export default function Header() {
                         </a>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border myshadow"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -25,7 +25,7 @@ export default function Header() {
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="w-6 h-6"
                                         viewBox="0 0 20 20"
-                                        fill="currentColor"
+                                        fill="#fff"
                                     >
                                         <path
                                             fillRule="evenodd"
@@ -36,10 +36,10 @@ export default function Header() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6"
-                                        fill="none"
+                                        className="w-6 h-6 "
+                                        fill="#fff"
                                         viewBox="0 0 24 24"
-                                        stroke="currentColor"
+                                        stroke="#fff"
                                         strokeWidth={2}
                                     >
                                         <path
@@ -64,13 +64,13 @@ export default function Header() {
                                 <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Home</Link>
                             </li>
                             <li className="">
+                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Projects</Link>
+                            </li>
+                            <li className="">
                                 <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >About</Link>
                             </li>
                             <li className="">
                                 <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Contact</Link>
-                            </li>
-                            <li className="">
-                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Home</Link>
                             </li>
                             
                         </ul>
