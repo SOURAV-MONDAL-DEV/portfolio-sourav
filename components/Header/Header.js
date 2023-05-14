@@ -8,7 +8,7 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className=" mx-10 md:mx-20 rounded-xl sticky top-3 z-10 shadow bg-white/[.07] backdrop-filter backdrop-blur-lg ">
+        <nav className=" mx-10 md:mx-20 rounded-lg sticky top-3 z-10 shadow bg-white/[.07] backdrop-filter backdrop-blur-lg ">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between  md:block">
@@ -60,18 +60,19 @@ export default function Header() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className=" text-amber-400 rounded hover:border-green-500">
-                                <Link href="/" className="text-sm md:text-xl font-semi-bold px-2 py-1 hover:border rounded-md" >Home</Link>
+                            <li className="">
+                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Home</Link>
                             </li>
-                            <li className=" text-amber-400 rounded hover:border-green-500">
-                                <Link href="/blog" className="text-sm md:text-xl font-semi-bold px-2 py-1 hover:border rounded-md " >Blog</Link>
+                            <li className="">
+                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >About</Link>
                             </li>
-                            <li className=" text-amber-400 rounded hover:border-green-500">
-                                <Link href='/about' className="text-sm md:text-xl font-semi-bold px-2 py-1 hover:border rounded-md " >About Me</Link>
+                            <li className="">
+                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Contact</Link>
                             </li>
-                            <li className=" text-amber-400 rounded hover:border-green-500">
-                                <Link href="/contact" className="text-sm md:text-xl font-semi-bold px-2 py-1 hover:border rounded-md " >Contact Me</Link>
+                            <li className="">
+                                <Link href="/" className="  font-semi-bold px-2 py-1 myshadow  hover:scale-110 rounded-md" >Home</Link>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
