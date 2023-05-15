@@ -12,16 +12,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  let msg = "helow, i m popup"
-
-  let PopAnimation = () => {
-    return (
-      <div className=' h-screen w-screen bg-green-300' >
-        <h1>{msg}</h1>
-      </div>
-    )
-  }
-
 
   return (
     <html lang="en">
