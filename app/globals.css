@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -96,4 +97,63 @@ body {
 		background-position: 0 0;
 	}
 }
+
+/* Animated menue items end --------------------------- */
+
+/* SOURAV MONDAL TEXT start --------------------------- */
+
+.nameText {
+	position: relative;
+}
+
+.nameText h2 {
+	color: #fff;
+	font-size: 6em;
+	/* position: absolute; */
+	/* transform: translate(-50%, -50%); */
+}
+
+.nameText h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #03a9f4;
+}
+
+.nameText h2:nth-child(2) {
+	position: absolute;
+	top: 0;
+	color: #03a9f4;
+	animation: textAnimate 4s ease-in-out infinite;
+}
+
+@keyframes textAnimate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
 
