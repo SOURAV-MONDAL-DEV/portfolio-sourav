@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import logoPic from "../../public/animation/souravsf.gif"
+import logoPic from "../../public/animation/wellcomesf.gif"
 import ani3 from "../../public/animation/a3.gif"
 
 export default function Header() {

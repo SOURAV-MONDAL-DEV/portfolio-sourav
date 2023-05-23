@@ -9,13 +9,14 @@ export default function Home() {
       <section className='md:grid grid-cols-2 md:-mt-20'>
 
         <div className='mx-2 md:ml-24 my-auto'>
-          <div className="nameText ">
+          <div className="nameText mx-auto md:ml-0 w-fit ">
             <h2>SOURAV</h2>
             <h2>SOURAV</h2>
+          <p className=' text-sky-400 font-semibold text-3xl absolute right-0 bottom-1'>MONDAL</p>
           </div>
           {/* <div className="nameText ">
-            <h2>MONDAL</h2>
-            <h2>MONDAL</h2>
+            <h2 className=''>MONDAL</h2>
+            <h2 className=''>MONDAL</h2>
           </div> */}
           {/* <h1 className='text-4xl  md:text-6xl text-[#05fc64] font-bold '>SOURAV <br></br> MONDAL</h1> */}
           <p className='text-amber-500 text-2xl font-semibold'>Front end Web Developer</p>
