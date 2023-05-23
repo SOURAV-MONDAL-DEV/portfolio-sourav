@@ -104,24 +104,29 @@ body {
 
 .nameText {
 	position: relative;
+	filter: brightness(1.5);
 }
 
 .nameText h2 {
 	color: #fff;
 	font-size: 6em;
+	font-weight: 600;
+	/* filter: blur(2px); */
 	/* position: absolute; */
 	/* transform: translate(-50%, -50%); */
 }
 
 .nameText h2:nth-child(1) {
+	/* filter: blur(2px); */
+
 	color: transparent;
-	-webkit-text-stroke: 1px #03a9f4;
+	-webkit-text-stroke: 2px #00D4FF;
 }
 
 .nameText h2:nth-child(2) {
 	position: absolute;
 	top: 0;
-	color: #03a9f4;
+	color: #00D4FF;
 	animation: textAnimate 4s ease-in-out infinite;
 }
 

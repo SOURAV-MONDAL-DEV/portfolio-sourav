@@ -13,6 +13,10 @@ export default function Home() {
             <h2>SOURAV</h2>
             <h2>SOURAV</h2>
           </div>
+          {/* <div className="nameText ">
+            <h2>MONDAL</h2>
+            <h2>MONDAL</h2>
+          </div> */}
           {/* <h1 className='text-4xl  md:text-6xl text-[#05fc64] font-bold '>SOURAV <br></br> MONDAL</h1> */}
           <p className='text-amber-500 text-2xl font-semibold'>Front end Web Developer</p>
           <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p>
