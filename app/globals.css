@@ -123,7 +123,7 @@ body {
 	position: absolute;
 	top: 0;
 	color: #00D4FF;
-	animation: textAnimate 2s ease-in-out infinite;
+	animation: textAnimate 3s ease-in-out infinite;
 }
 
 @keyframes textAnimate {
@@ -158,7 +158,7 @@ body {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
 	.nameText {
 		/* font-size: 4em; */
 		/* text-align: center; */
