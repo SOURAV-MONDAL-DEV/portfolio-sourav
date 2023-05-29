@@ -32,7 +32,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  animation: mymove 2s  infinite;
+  animation: mymove 4s  infinite;
   /* background-image: url("../public/bg-image/20230509_022116.jpg"); */
   animation-direction: alternate;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
 	z-index: -1;
-	animation: animate 20s linear infinite;
+	animation: animate 60s linear infinite;
   border-radius: 0.5rem;
 }
 

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import img1 from "/public/images/sourav-2.png";
 import img2 from "/public/images/hex-br.gif";
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
 
       <section className='md:grid grid-cols-2 md:-mt-20'>
 
-        <div className='mx-2 md:ml-24 my-auto'>
+        <div className='mx-2 md:ml-32 xl:ml-48 my-auto'>
           <div className='flex justify-center md:justify-start items-center '>
             <div className="nameText mx-0 md:ml-0 w-fit ">
               <h2>SOURAV</h2>
