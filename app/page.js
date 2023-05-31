@@ -27,17 +27,8 @@ export default function Home() {
             </div>
           </div>
 
+          <Intro_pose className="flex justify-center md:justify-start items-center w-fit"></Intro_pose>
 
-          {/* <Textra
-            effect='flash'
-            duration={1000}
-            data={['one', 'two', 'three']} /> */}
-
-            {/* <Intro></Intro> */}
-            <Intro_pose></Intro_pose>
-
-
-          <p className='text-amber-500 text-2xl font-semibold'>Front end Web Developer</p>
           <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p>
         </div>
         <div className=' flex justify-center items-center mx-auto w-fit relative'>
