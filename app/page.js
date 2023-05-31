@@ -2,6 +2,8 @@ import Image from 'next/image'
 import img1 from "/public/images/sourav-2.png";
 import img2 from "/public/images/hex-br.gif";
 import { motion } from "framer-motion"
+import Intro from '@/components/Intro_textra/Intro';
+import Intro_pose from '@/components/Intro_pose/Intro_pose';
 
 export default function Home() {
   return (
@@ -24,11 +26,17 @@ export default function Home() {
               <p className=' text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 '>L</p>
             </div>
           </div>
-          {/* <div className="nameText ">
-            <h2 className=''>MONDAL</h2>
-            <h2 className=''>MONDAL</h2>
-          </div> */}
-          {/* <h1 className='text-4xl  md:text-6xl text-[#05fc64] font-bold '>SOURAV <br></br> MONDAL</h1> */}
+
+
+          {/* <Textra
+            effect='flash'
+            duration={1000}
+            data={['one', 'two', 'three']} /> */}
+
+            {/* <Intro></Intro> */}
+            <Intro_pose></Intro_pose>
+
+
           <p className='text-amber-500 text-2xl font-semibold'>Front end Web Developer</p>
           <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p>
         </div>
