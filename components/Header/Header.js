@@ -16,7 +16,7 @@ export default function Header() {
     }
 
     useEffect(() => {
-        setTimeout(myFunction, 1500);
+        setTimeout(myFunction, 1900);
         // console.log("first")
     }, [])
 

@@ -78,13 +78,13 @@ class Intro_pose extends Component {
     let { isVisible, slides, currentSlide } = this.state;
 
     return (
-      <div className="h-16 flex justify-center mx-auto md:ml-0 items-center w-fit " onClick={this.changeSlide.bind(this)}>
+      <div className="h-16  flex justify-center mx-auto md:ml-0 items-center w-fit " onClick={this.changeSlide.bind(this)}>
         <PoseGroup>
           {isVisible && [
             <Shade key="shade" className="shade" />,
             <Modal key="modal" className="modal">
               {/* <p>Slide {currentSlide + 1} title</p> */}
-              <h1 className="text-white text-4xl font-bold">
+              <h1 className="text-[#e9fa02] text-2xl md:text-4xl font-bold">
                 <SplitText charPoses={charPoses}>
                   {slides[currentSlide]}
                 </SplitText>

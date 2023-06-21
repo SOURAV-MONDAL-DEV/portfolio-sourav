@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import img1 from "/public/images/sourav-2.png";
 import img2 from "/public/images/hex-br.gif";
-import { motion } from "framer-motion"
 import Intro from '@/components/Intro_textra/Intro';
 import Intro_pose from '@/components/Intro_pose/Intro_pose';
+
+
+import { motion } from "framer-motion"
+import Hero from '@/components/Hero/Hero';
 
 export default function Home() {
   return (
@@ -11,7 +14,7 @@ export default function Home() {
 
       <section className='md:grid grid-cols-2 md:-mt-20'>
 
-        <div className='mx-2 md:ml-32 xl:ml-48 my-auto'>
+        <div className='mx-2  my-auto'>
           <div className='flex justify-center md:justify-start items-center '>
             <div className="nameText mx-0 md:ml-0 w-fit ">
               <h2>SOURAV</h2>
@@ -29,10 +32,12 @@ export default function Home() {
 
           <Intro_pose className="flex justify-center md:justify-start items-center w-fit"></Intro_pose>
 
-          <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p>
+          
+
+          {/* <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p> */}
         </div>
         <div className=' flex justify-center items-center mx-auto w-fit relative'>
-          <Image className=' opacity-20 mx-auto xs:max-w-[320px] sm:min-w-[600px]' src={img2} height="auto" />
+          <Image className=' opacity-[0.15] mx-auto xs:max-w-[320px] sm:min-w-[600px]' src={img2} height="auto" />
           <Image className=' absolute  mx-auto my-auto rotate-[30deg] xs:max-w-[200px] sm:max-w-[283px]' src={img1} height="auto" alt="img" ></Image>
         </div>
 
@@ -43,7 +48,10 @@ export default function Home() {
       <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
       <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
       <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
-      <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHU</div>
+
+
+      <Hero></Hero>
 
 
     </main>

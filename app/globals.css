@@ -111,6 +111,8 @@ body {
 	color: #fff;
 	font-size: 6em;
 	font-weight: 600;
+	/* padding: 0; */
+	line-height: 0.99;
 
 }
 
