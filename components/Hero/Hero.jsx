@@ -1,25 +1,67 @@
-"use client"
-import React from 'react'
-import { motion } from "framer-motion"
-
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import Intro_pose from "../Intro_pose/Intro_pose";
+import Image from "next/image";
+import img1 from "/public/images/sourav-2.png";
+import img2 from "/public/images/hex-c.gif";
 
 function Hero() {
   return (
-    <div className='text-gray-500'>
+    <motion.div
+      initial={{ opacity: 0,  scale: 0.5}}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ ease: "linear",delay: 2, duration: 2 }}
+    >
+      <section className="md:grid grid-cols-2 gap-10 md:mt-3 transform scale-90 origin-center">
+        <div className="mx-2  my-auto">
+          <div className="flex justify-center md:justify-start items-center ">
+            <div className="nameText mx-0 md:ml-0 w-fit ">
+              <h2>SOURAV</h2>
+              <h2>SOURAV</h2>
+            </div>
+            <div>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                M
+              </p>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                O
+              </p>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                N
+              </p>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                D
+              </p>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                A
+              </p>
+              <p className=" text-sky-400 text-[9px] sm:text-xs md:text-xs leading-[0.5rem] sm:leading-3 md:leading-3 brightness-200 ">
+                L
+              </p>
+            </div>
+          </div>
 
-        <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ x: 100, opacity: 1, scale: 1 }}
-        transition={{ ease: "easeOut", duration: 4 }}
-      >
+          <Intro_pose className="flex justify-center md:justify-start items-center w-fit"></Intro_pose>
 
-        <div className='w-20 h-20 bg-red-500'></div>
-
-
-        </motion.div>
-
-    </div>
-  )
+          {/* <p className='text-white'>Hey, I'm Sourav Mondal. A junior front-end MERN stack web developer. And this is my personal portfolio website</p> */}
+        </div>
+        <div className=" flex justify-center items-center mx-auto w-fit relative">
+          <Image
+            className=" opacity-[0.15] mx-auto xs:max-w-[320px] sm:min-w-[445px]"
+            src={img2}
+            height="auto"
+          />
+          <Image
+            className=" absolute  mx-auto my-auto rotate-[30deg] xs:max-w-[200px] sm:max-w-[283px]"
+            src={img1}
+            height="auto"
+            alt="img"
+          ></Image>
+        </div>
+      </section>
+    </motion.div>
+  );
 }
 
-export default Hero
+export default Hero;
