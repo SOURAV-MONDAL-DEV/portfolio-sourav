@@ -66,7 +66,6 @@ class Intro_pose extends Component {
     //4
     let nextSlide = slides.length - 1 > currentSlide ? currentSlide + 1 : 0;
     // let nextSlide = currentSlide + 1;
-    console.log(currentSlide, nextSlide);
 
     this.setState({ isVisible: false, currentSlide: nextSlide });
     const that = this;
