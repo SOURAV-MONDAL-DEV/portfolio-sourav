@@ -15,7 +15,7 @@ function Hero() {
           className="mx-auto  my-auto flex flex-col items-center justify-center"
           initial={{ opacity: 0.5, scale: 1, x:-800 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ ease: "ease out", delay: 2, duration: 2, type: "spring", stiffness: 70  }}
+          transition={{ ease: "ease out", delay: 0, duration: 2, type: "spring", stiffness: 70  }}
         >
             <div className="flex justify-center items-center  ">
               <div className="nameText mx-0 w-fit ">
@@ -51,7 +51,7 @@ function Hero() {
         <motion.div
           initial={{ opacity: 0.5, scale: 1, x:800 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ ease: "ease out", delay: 2, duration: 2, type: "spring", stiffness: 70 }}
+          transition={{ ease: "ease out", delay: 0, duration: 2, type: "spring", stiffness: 70 }}
         
         >
         <div className=" flex justify-center items-center mx-auto w-fit relative">
