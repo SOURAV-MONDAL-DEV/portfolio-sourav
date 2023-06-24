@@ -77,7 +77,7 @@ class Intro_pose extends Component {
     let { isVisible, slides, currentSlide } = this.state;
 
     return (
-      <div className="h-16  flex justify-center mx-auto md:ml-0 items-center w-fit " onClick={this.changeSlide.bind(this)}>
+      <div className="h-16  flex justify-center mx-auto  items-center w-fit " onClick={this.changeSlide.bind(this)}>
         <PoseGroup>
           {isVisible && [
             <Shade key="shade" className="shade" />,
