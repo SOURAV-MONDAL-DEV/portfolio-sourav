@@ -1,7 +1,16 @@
-// "use client"
+"use client"
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from "../components/Header/Header"
+
+
+
+import { useEffect, useState } from "react";
+import Link from 'next/link';
+import Image from 'next/image';
+import ani3 from "../public/animation/a3.gif"
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,12 +22,36 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
 
+
+  const [showPage, setShowPage] = useState(false);
+
+  function myFunction() {
+    setShowPage(true)
+  }
+
+  useEffect(() => {
+    setTimeout(myFunction, 1900);
+  }, [])
+
+
+
+
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <footer>This is Footer</footer>
+        {
+          showPage 
+          ? <>
+              <Header />
+              {children}
+              <footer>This is Footer</footer>
+            </>
+          : <div className=' flex flex-col items-center justify-center h-screen w-screen sticky top-0 z-10 bg-black' >
+              {/* <h1>ok done</h1> */}
+              <Image className="" src={ani3} alt="animation" />
+            </div>
+        }
       </body>
     </html>
   )
