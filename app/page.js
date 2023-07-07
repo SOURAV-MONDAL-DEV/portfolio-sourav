@@ -7,10 +7,14 @@ import Intro_pose from '@/components/Intro_pose/Intro_pose';
 
 import { motion } from "framer-motion"
 import Hero from '@/components/Hero/Hero';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <main className=" mainClass z-10 flex min-h-screen flex-col items-center justify-between m-5">
+      <Head>
+        <title>Home</title>
+      </Head>
       <Hero></Hero>
       <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
       <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
@@ -18,9 +22,6 @@ export default function Home() {
       <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
       <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
       <div className='m-10 text-white'>fhDJFHAUFHU</div>
-
-
-
 
     </main>
   )

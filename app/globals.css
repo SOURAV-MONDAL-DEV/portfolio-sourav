@@ -31,18 +31,25 @@
   }
 }
 
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  animation: mymove 4s  infinite;
-  background-image: url("../public/bg-image/20230509_022151.jpg");
-  animation-direction: alternate;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-    /* Add the blur effect */
-    /* filter: blur(24px);
-    -webkit-filter: blur(24px); */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
 }
+
+#background-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+  }
+
 
 /* @keyframes mymove {
   0% {background-image: url("../public/bg-image/20230509_022116.jpg");}
@@ -171,5 +178,12 @@ body {
 		font-size: 4em;
 	}
   }
+
+
+
+
+
+
+  
 
 

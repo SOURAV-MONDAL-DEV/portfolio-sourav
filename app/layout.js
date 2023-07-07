@@ -6,10 +6,9 @@ import Header from "../components/Header/Header"
 
 
 import { useEffect, useState } from "react";
-import Link from 'next/link';
-import Image from 'next/image';
-import ani3 from "../public/animation/a3.gif"
 import Loader from '@/components/Loader/Loader';
+import BackgroundVideo from '@/components/BGvideo/BackgroundVideo';
+// import Head from 'next/head';
 
 
 
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
   }
 
   useEffect(() => {
-    setTimeout(myFunction, 1900);
+    setTimeout(myFunction, 850);
   }, [])
 
 
@@ -40,7 +39,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      
       <body className={inter.className}>
+        <BackgroundVideo/>
         {
           showPage 
           ? <>
