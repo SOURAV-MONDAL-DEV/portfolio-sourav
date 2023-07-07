@@ -15,11 +15,14 @@ const BackgroundVideo = () => {
   }, []);
 
   return (
-    <video id="background-video" autoPlay muted loop>
+    <div className='video-container'>
+      <video id="background-video" autoPlay muted loop>
       <source src="/video/bgvdo.mp4" type="video/mp4" />
       {/* <source src="/path/to/video.webm" type="video/webm" />
       Your browser does not support the video tag. */}
     </video>
+    <div className='overlay'></div>
+    </div>
   );
 };
 
