@@ -8,7 +8,7 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className=" mx-10 md:mx-20 rounded-lg sticky top-3 z-10 shadow bg-white/[.07] backdrop-filter backdrop-blur-lg  transform scale-90 origin-center ">
+        <nav className=" mx-10 md:mx-20 rounded-lg sticky top-3 z-10 shadow backdrop-filter backdrop-blur-lg  transform scale-90 origin-center ">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between  md:block">
