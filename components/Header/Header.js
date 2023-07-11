@@ -14,7 +14,7 @@ export default function Header() {
       };
 
     return (
-        <nav className=" mx-10 md:mx-20 rounded-lg sticky top-3 z-10 shadow backdrop-filter backdrop-blur-lg  transform scale-90 origin-center ">
+        <nav className=" mx-auto rounded-lg fixed w-full top-3 z-10 shadow backdrop-filter backdrop-blur-lg  transform scale-90 origin-center ">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between  md:block">
@@ -73,7 +73,7 @@ export default function Header() {
                             </li>
                             <li className="">
                                 <Link href="#about" className="  font-semi-bold px-2 py-1 myshadow transition ease-in-out duration-900 hover:scale-110 rounded-md" >
-                                    <button onClick={(e) => handleClick(e)}>About</button>
+                                    <button onClick={(e) => handleClick(e,"2nddiv")}>About</button>
                                 </Link>
                             </li>
                             <li className="">

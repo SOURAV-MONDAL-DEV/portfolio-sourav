@@ -15,9 +15,9 @@ import About from './about/About';
 export default function Home() {
 
 
-  const handleClick = (e) => {
+  const handleClick = (e, id) => {
     e.preventDefault();
-    const targetElement = document.getElementById('about');
+    const targetElement = document.getElementById(id);
     targetElement.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -31,8 +31,8 @@ export default function Home() {
       </Head>
       <Hero></Hero>
 
-      <Link className='text-white  ' href="#about">
-        <button onClick={(e) => handleClick(e)}>
+      <Link className='text-white  ' href="#2nddiv">
+        <button onClick={(e) => handleClick(e, "2nddiv")}>
           <svg class="arrows">
             <path class="a1" d="M0 0 L30 25 L60 0"></path>
             <path class="a2" d="M0 20 L30 45 L60 20"></path>
@@ -43,7 +43,7 @@ export default function Home() {
 
 
 
-      <div className='mt-[230px]'>
+      <div id='2nddiv' className='mt-[230px]'>
         <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
         <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
         <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
