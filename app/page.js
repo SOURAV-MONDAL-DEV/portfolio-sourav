@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import img1 from "/public/images/sourav-2.png";
 import img2 from "/public/images/hex-c.gif";
@@ -8,14 +9,46 @@ import Intro_pose from '@/components/Intro_pose/Intro_pose';
 import { motion } from "framer-motion"
 import Hero from '@/components/Hero/Hero';
 import Head from 'next/head';
+import Link from 'next/link';
+import About from './about/About';
 
 export default function Home() {
+
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    const targetElement = document.getElementById('about');
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
+
+
   return (
     <main className=" mainClass z-10 flex min-h-screen flex-col items-center justify-between m-5">
       <Head>
         <title>Home</title>
       </Head>
       <Hero></Hero>
+
+      <Link className='text-white  ' href="#about">
+        <button onClick={(e) => handleClick(e)}>About Me</button>
+      </Link>
+
+
+      <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHU</div>
+      <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHUADGUADHFAUDS</div>
+      <div className='m-10 text-white'>fhDJFHAUFHU</div>
+      <About></About>
       <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
       <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
       <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
