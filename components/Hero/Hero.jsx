@@ -9,8 +9,8 @@ import ContactLinks from "../Buttons/ContactLinks";
 
 function Hero() {
   return (
-    <div>
-      <section className="md:grid grid-cols-2 gap-10 md:mt-3 transform md:scale-[.8] origin-center">
+    <div className=" md:w-screen md:h-screen  md:flex items-center justify-center">
+      <section className="md:grid grid-cols-2 gap-10 md:-mt-28 transform md:scale-[.8] origin-center">
         
       <motion.div
           className=" md:order-2"
