@@ -69,8 +69,6 @@ function Hero() {
             <Intro_pose className="flex justify-center items-center w-fit mx-auto"></Intro_pose>
             <ContactLinks></ContactLinks>
         </motion.div>
-
-
       </section>
     </div>
   );
