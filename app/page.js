@@ -43,7 +43,7 @@ export default function Home() {
 
 
 
-      <div id='2nddiv' className='mt-[230px]'>
+      <div id='2nddiv' className='pt-12'>
         <div className='m-10 text-white font-["Lobster"]'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
         <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
         <div className='m-10 text-white'>Hi DJ FHAU FHUA DG UADHFAUDS</div>
