@@ -8,6 +8,7 @@ import Header from "../components/Header/Header"
 import { useEffect, useState } from "react";
 import Loader from '@/components/Loader/Loader';
 import BackgroundVideo from '@/components/BGvideo/BackgroundVideo';
+import Header2 from '@/components/Header2/Header2';
 // import Head from 'next/head';
 
 
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
         {
           showPage 
           ? <>
-              <Header />
+              <Header2 />
               {children}
               <footer>This is Footer</footer>
             </>
