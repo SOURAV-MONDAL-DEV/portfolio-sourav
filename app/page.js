@@ -11,6 +11,7 @@ import Hero from '@/components/Hero/Hero';
 import Head from 'next/head';
 import Link from 'next/link';
 import About from './about/About';
+import Project from '@/components/Projects/Projects';
 
 export default function Home() {
 
@@ -41,6 +42,7 @@ export default function Home() {
         </button>
       </Link>
 
+      <Project></Project>
 
 
       <div id='2nddiv' className='pt-12'>

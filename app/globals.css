@@ -80,7 +80,8 @@ body {
 	text-align: center;
 	/* width: 400px;
 	height: 250px; */
-	background: linear-gradient(0deg, #000, #262626);
+	/* background: linear-gradient(0deg, #000, #262626); */
+	background: #272726;
 }
 .myshadow:before,
 .myshadow:after {

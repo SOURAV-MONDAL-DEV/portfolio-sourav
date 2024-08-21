@@ -7,6 +7,8 @@ import { MdHome } from "react-icons/md";
 import { BsGridFill } from "react-icons/bs";
 import { FcAbout } from "react-icons/fc";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { FiPhoneCall } from "react-icons/fi";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Header2() {
   const [navbar, setNavbar] = useState(false);
@@ -41,7 +43,7 @@ export default function Header2() {
             href="#about"
             className="font-semi-bold px-2 py-1 myshadow transition ease-in-out duration-900 hover:scale-110 rounded-md"
           >
-            <FcAbout onClick={(e) => handleClick(e, "2nddiv")} />
+            <HiMenuAlt2 onClick={(e) => handleClick(e, "2nddiv")} />
           </Link>
         </li>
         <li>
@@ -49,7 +51,7 @@ export default function Header2() {
             href="/"
             className="font-semi-bold px-2 py-1 myshadow transition ease-in-out duration-900 hover:scale-110 rounded-md"
           >
-            <HiMenuAlt2 />
+            <FaPhoneAlt />
           </Link>
         </li>
       </ul>
